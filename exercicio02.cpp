@@ -4,7 +4,7 @@ int main(void){
     char gender;
     double altura, peso_ideal = 0;
     printf("Digite seu genero M para masculino ou F para feminino \n");
-    scanf("%c", &gender);
+    scanf("%s", &gender);
     printf("Digite sua altura: \n");
     scanf("%lf", &altura);
     
