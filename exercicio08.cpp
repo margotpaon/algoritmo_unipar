@@ -4,14 +4,14 @@
 
 int main() {
 
-    int l, c, soma, mat[4][5], somaLinhas[4], somaColunas[5];
+    int l, c, soma, mat[4][5], somaLinhas[4], somaColunas[5], soma_total;
 
     srand(time(NULL));
 
     // preenche a matriz
     for(l = 0; l < 4; l++){
         for(c = 0; c < 5; c++){
-            mat[l][c] = rand() % 100;
+            mat[l][c] = rand() % 5;
         }
     }
 
@@ -25,12 +25,14 @@ int main() {
     }
 
     // letra b) soma das colunas
+    soma_total = 0;
     for(c = 0; c < 5; c++){
         soma = 0;
         for(l = 0; l < 4; l++){
             soma += mat[l][c];
         }
         somaColunas[c] = soma;
+        soma_total += soma;
     }
 
     // impressão das estruturas
@@ -51,6 +53,7 @@ int main() {
     for(c = 0; c < 5; c++){
         printf("Coluna %d: %d\n", c+1, somaColunas[c]);
     }
+    printf("\n\nA soma de todos elementos da matriz é: %d\n",soma_total);
 
     return 0;
 }
