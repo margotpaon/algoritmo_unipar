@@ -1,0 +1,31 @@
+algoritmo "exercicio02"
+// Função: Calcule e mostre o peso ideal
+// Autora: Margot Paon de Andrade Garcia
+// Data: 03/07/2022
+
+// Seção de declarações
+VARIAVEIS
+altura, peso_ideal: real;
+gender: caracter;
+
+// Seção de comandos
+INICIO 
+altura <- 0;
+peso_ideal <- 0;
+gender <- '';
+
+
+ESCREVA("Digite seu genero M para masculino ou F para feminino:");
+LER(gender);
+ESCREVA("Digite sua altura::");
+LER(altura);
+se gender = 'M' ou gender = 'm' então
+peso_ideal <- (450.7 * altura) / 10
+ESCREVA("O seu peso ideal deve ser:");
+ESCREVA(peso_ideal)
+senão
+peso_ideal <- (400.7 * altura) / 10
+ESCREVA("O seu peso ideal deve ser:");
+ESCREVA(peso_ideal)
+fimse
+FIM

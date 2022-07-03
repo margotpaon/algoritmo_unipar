@@ -1,0 +1,26 @@
+algoritmo "exercicio01"
+// Função: Calcule o valor de Z
+// Autora: Margot Paon de Andrade Garcia
+// Data: 03/07/2022
+
+// Seção de declarações
+VARIAVEIS
+z,a,l,c: real
+
+// Seção de comandos
+INICIO 
+z <- 0;
+a <- 0;
+l <- 0;
+c <- 0;
+
+ESCREVA("Digite o valor para A:");
+LER(a);
+ESCREVA("Digite o valor para L:");
+LER(l);
+ESCREVA("Digite o valor para C:");
+LER(c);
+z <- (l+a*2.3)/c;
+ESCREVA("O valor de Z é igual a:");
+ESCREVA(z)
+FIM
